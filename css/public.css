@@ -1,0 +1,19 @@
+@charset "utf-8";
+.site-sprite1 {
+  background: url("../img/spritesheet1.png") no-repeat;
+  display: block;
+}
+.site-sprite2 {
+  background: url("../img/spritesheet2.png") no-repeat;
+  display: block;
+}
+.site-mast-bg {
+  background: #f72862;
+}
+.d-site-mast-bg {
+  background: #df1e54;
+}
+.l-site-mast-bg {
+  background: #fd4a7c;
+}
+/*# sourceMappingURL=public.css.map */

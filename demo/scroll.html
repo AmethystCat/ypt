@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .w {
+            width: 100%;
+            min-height: 1000px;
+            overflow: auto;
+        }
+        .nav {
+            width: 100%;
+            background: olive;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav ul li{
+            float: left;
+            width: 25%;
+            height: 40px;
+            line-height: 40px;
+        }
+        .nav ul li a {
+            display: block;
+            text-align: center;
+        }
+        .ft {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="nav">
+            <ul>
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+                <li><a href="#">item4</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        var st = $(window).scrollTop();
+        $(window).scroll(function (e) {
+            var stn = $(window).scrollTop();
+            if ( st > 0 && (stn - st < 0) ){
+                $(".nav").addClass("ft");
+            }else {
+                $(".nav").removeClass("ft");
+            }
+            st = $(window).scrollTop();
+            console.log(st);
+        });
+    });
+</script>
+</html>

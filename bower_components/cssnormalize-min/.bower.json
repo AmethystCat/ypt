@@ -1,0 +1,15 @@
+{
+  "name": "cssnormalize-min",
+  "_cacheHeaders": {
+    "ETag": "\"YM:1:eb947aa8-ae0c-4da8-a331-05008b390683000505f73e2e5926\"",
+    "Last-Modified": "Tue, 21 Oct 2014 23:32:21 GMT",
+    "Content-Length": "2982",
+    "Content-Type": "text/css; charset=utf-8"
+  },
+  "_release": "e-tag:YM:1:eb94",
+  "main": "index.css",
+  "_source": "http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css",
+  "_target": "*",
+  "_originalSource": "http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css",
+  "_direct": true
+}

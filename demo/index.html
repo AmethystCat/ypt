@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>meituan</title>
+    <!--安装normalize.css-->
+    <link rel="stylesheet" href="../bower_components/cssnormalize-min/index.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <!--安装jquery-->
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <!--顶部菜单栏-->
+        <div class="section-header-topmenu">
+            <ul class="topmenu-basic-info">
+                <li>收藏美团</li>
+                <li>
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </li>
+                <!--消息菜单，用户登录后才会出现-->
+                <li>
+                    <a href="#">
+                        <i></i>
+                            消息
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i></i>
+                            手机美团
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="topmenu-user-w">
+                <li><a href="#">我的订单</a></li>
+                <li>
+                    <a href="#">
+                        <span>我的美团</span>
+                        <!--array-->
+                        <i></i>
+                        <!--分割线-->
+                        <i></i>
+                    </a>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                        <li><a href="#">我的评价</a></li>
+                        <li><a href="#">我的积分</a></li>
+                        <li><a href="#">抵用卷</a></li>
+                        <li><a href="#">美团余额</a></li>
+                        <li><a href="#">账户充值</a></li>
+                        <li><a href="#">账户设置</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>最近浏览</span>
+                        <i></i>
+                        <i></i>
+                    </a>
+                    <div>
+                        <ul>
+                            <li>
+                                <!--图片-->
+                                <a href="#"><img src="" alt=""/></a>
+                                <!--标题-->
+                                <h5></h5>
+                                <!--价格-->
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                        <p><a href="#">清空最近浏览记录</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <!--购物车图标-->
+                        <i></i>
+                        <span>
+                            购物车
+                            <em>
+                                <strong>0</strong>
+                                件
+                            </em>
+                        </span>
+                    </a>
+                    <div>
+                        <!--<p>暂时未添加任何商品</p>-->
+                        <ul>
+                            <li>
+                                <a href="#"><img src="" alt=""/></a>
+                                <h5></h5>
+                                <p>
+                                    <a href="#">删除</a>
+                                    <em>￥68</em>
+                                </p>
+                            </li>
+                        </ul>
+                        <p><a href="#">查看我的购物车</a></p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>联系客服</span>
+                        <i></i>
+                        <i></i>
+                    </a>
+                    <div>
+                        <ul>
+                            <li><a href="#">申请退款</a></li>
+                            <li><a href="#">申请退换货</a></li>
+                            <li><a href="#">查看美团劵</a></li>
+                            <li><a href="#">换绑手机号</a></li>
+                            <li><a href="#">常见问题</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>我是商家</span>
+                        <i></i>
+                        <i></i>
+                    </a>
+                    <div>
+                        <ul>
+                            <li><a href="#">商家中心</a></li>
+                            <li><a href="#">我想合作</a></li>
+                            <li><a href="#">商家营销平台</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>更多</span>
+                        <i></i>
+                        <i></i>
+                    </a>
+                    <div>
+                        <ul>
+                            <li><a href="#">手机版</a></li>
+                            <li><a href="#">邮件订阅</a></li>
+                            <li><a href="#">邀请好友</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--搜索框部分-->
+        <div class="section-header-body">
+            <!--logo-->
+            <a class="header-site-logo" href="#">艺培团</a>
+            <div class="city-info">
+                <h2>
+                    <a href="#">成都</a>
+                </h2>
+                <a href="#">切换城市</a>
+            </div>
+            <div class="search-box">
+                <form action="">
+                    <div class="search-box__tabs-container">
+                        <span></span>
+                        <ul class="search-box__tabs">
+                            <li class="search-box__tab search-box__tab--deal search-box__tab--current">团购</li>
+                            <li class="search-box__tab search-box__tab--shops">商家</li>
+                        </ul>
+                    </div>
+                    <input type="text" class="search-box__input" placeholder="请输入商品名称、地址等"/>
+                    <input type="submit" class="search-box__submit" value="搜&nbsp;&nbsp;索"/>
+                </form>
+
+                <ul class="search-suggest"></ul>
+                <div class="smart-query-panel">
+                    <div class="smart-query-content"></div>
+                </div>
+                <div class="search-box__hot">
+                    <div class="s-hot">
+                        <a class="hot-link" href="#">设计培训</a>
+                        <a class="hot-link" href="#">音乐</a>
+                        <a class="hot-link" href="#">天空艺术</a>
+                        <a class="hot-link" href="#">四海音乐</a>
+                        <a class="hot-link" href="#">九方绘画</a>
+                        <a class="hot-link" href="#">环球艺术高考</a>
+                    </div>
+                </div>
+            </div>
+            <a class="header-site-ad" href="#"><img src="" alt=""/></a>
+        </div>
+        <!--导航条-->
+        <div class="section-header-nav site-head_site-nav">
+            <div class="site-nav-inner">
+                <!--分类导航-->
+                <div class="site-head__cate-nav">
+                    <span class="site-head__cate-nav-t">全部分类</span>
+                    <div class="site-head__cate-nav-c-w"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">美术</a></li>
+                        <li><a href="#">音乐</a></li>
+                        <li><a href="#">舞蹈</a></li>
+                        <li><a href="#">播音主持</a></li>
+                        <li><a href="#">编导</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="section-body">
+        <!--团购：group-buying-->
+        <!--section-part1-banner-->
+        <div class="section-banner"></div>
+        <!--section-part2-aside-->
+        <div class="section-aside"></div>
+        <!--section-part3-名店抢购-->
+        <div class="section-panic-buying"></div>
+        <!--section-part4-美食团购-->
+        <div class="section-gb-food"></div>
+        <!--section-part5-休闲娱乐-->
+        <div class="section-gb-entertainment"></div>
+        <!--section-part6-电影-->
+        <div class="section-gb-film"></div>
+        <!--section-part7-购物-->
+        <div class="section-gb-shopping"></div>
+        <!--section-part8-丽人-->
+        <div class="section-gb-beautiful"></div>
+        <!--section-part9-旅游-->
+        <div class="section-gb-travel"></div>
+        <!--section-part11-快捷链接标签-->
+        <div class="section-gb-cloud"></div>
+    </div>
+    <footer>
+        <div class="section-site-info-w">
+            <div class="section-site-info-item">
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <h3></h3>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <i></i>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

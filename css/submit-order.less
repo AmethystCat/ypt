@@ -1,0 +1,194 @@
+@import "public.less";
+
+.site-logo {
+  float: left;
+  width: 120px;
+  height: 42px;
+  padding: 45px 0;
+  text-indent: -9999px;
+  background: url("../img/site-logo.png") no-repeat center;
+}
+
+.submit-process {
+  width: 653px !important;
+  float: right;
+  padding: 45px 0;
+  /*设置以下属性是为了去掉inline-block产生的空格*/
+  font-size: 0px;
+  letter-spacing: -4px;
+  word-spacing: -4px;
+  span {
+    display: inline-block;
+    width: 217px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    border-bottom: 3px solid #eee;
+  }
+  span.at {
+    border-bottom: 3px solid @site-mast-c;
+  }
+}
+
+.order-list__table {
+  width: 100%;
+  color: #666;
+  thead {
+    tr {
+      line-height: 42px;
+      background: #f2f2f2;
+      text-align: left;
+      th {
+        &:first-child{
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      height: 87px;
+      border-bottom: 1px dashed #ccc;
+      td {
+        *border-bottom: 1px dashed #ccc;
+        &:first-child{
+          width: 524px;
+          padding: 20px 40px 20px 25px;
+          &+td {
+            width: 160px;
+            &+td {
+              width: 214px;
+              text-align: center;
+              &+td {
+                padding-right: 25px;
+                text-align: right;
+                color: @site-mast-c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dealbuy-quantity {
+  padding-left: 60px;
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-appearance: none;
+    outline: 0;
+    height: 34px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 6px 2px;
+    margin: 0;
+    color: #666;
+    background: #eee;
+    cursor: pointer;
+  }
+  input {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    -webkit-appearance: none;
+    outline: 0;
+    width: 40px;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+  }
+  .minus {
+    margin-right: -8px;
+    border-right: 1px dashed #ccc;
+  }
+  .add {
+    margin-left: -8px;
+    border-left: 1px dashed #ccc;
+  }
+}
+.order-list__note {
+  input {
+    width: 258px;
+    height: 34px;
+    border: 1px solid #ccc;
+  }
+}
+.order-amount {
+  padding-right: 25px;
+  span {
+    display: inline-block;
+    *display: inline;
+    width: 140px;
+  }
+}
+.order-total__w {
+  height: 86px;
+  line-height: 86px;
+  padding-right: 25px;
+  border-bottom: 1px dashed #ccc;
+  strong {
+    padding-left: 15px;
+    font-size: 26px;
+    color: @site-mast-c;
+  }
+}
+.order-submit {
+  float: right;
+  width: 180px;
+  height: 48px;
+  font-size: 22px;
+  margin: 30px;
+  background: @site-mast-c;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+}
+
+/*订单支付成功*/
+.order--submit-success {
+  width: 584px;
+  height: 385px;
+//  margin: 0 auto;
+  margin-left: 388px;
+  overflow: hidden;
+//  text-align: center;
+//  border: 1px solid #ccc;
+  background: #fff url("../img/success-icon.png") no-repeat 12px 12px;
+
+  a {
+    display: inline-block;
+    margin: 50px 0 0 155px;
+    width: 162px;
+    height: 52px;
+    line-height: 52px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    background: @site-mast-c;
+  }
+}
+.order__submit-mes {
+  margin: 30px 0 0 155px;
+
+  span {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    &:first-child {
+      padding-bottom: 10px;
+      font-size: 24px;
+      color: @site-mast-c;
+    }
+  }
+}

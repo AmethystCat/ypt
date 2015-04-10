@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+</head>
+<body>
+<div style="background-color:#000000;color:#FFFFFF;width:300px;height:300px;position:absolute;top:80px;left:90px;margin:0px; border:0px;" id="demo" onmousemove="DisplayMp(event)">
+    我是DIV,经测试,有2PX的误差...
+</div>
+当前鼠标坐标为：
+X：<span id="mp_x"></span>
+Y：<span id="mp_y"></span>
+</body>
+<script type="text/javascript">
+    function getX(obj){
+        var ParentObj=obj;
+        var left=obj.offsetLeft;
+        while(ParentObj=ParentObj.offsetParent){
+            console.log(ParentObj);
+            left+=ParentObj.offsetLeft;
+        }
+        return left;
+    }
+    function getY(obj){
+        var ParentObj=obj;
+        var top=obj.offsetTop;
+        while(ParentObj=ParentObj.offsetParent){
+            top+=ParentObj.offsetTop;
+        }
+        return top;
+    }
+    function DisplayMp(event)
+    {
+        var top,left,oDiv;
+        oDiv=document.getElementById("demo");
+        top=getY(oDiv);
+        left=getX(oDiv);
+        console.log("top:"+top);
+        console.log("left:"+left);
+        console.log("event.clientX:"+event.clientX);
+        console.log("event.clientY:"+event.clientY);
+        console.log("document.body.scrollLeft:"+document.body.scrollLeft);
+        console.log("document.body.scrollTop:"+document.body.scrollTop);
+
+        document.getElementById("mp_x").innerHTML = (event.clientX-left+document.body.scrollLeft)  -2+"px";
+        document.getElementById("mp_y").innerHTML = (event.clientY-top+document.body.scrollTop) -2+"px";
+
+    } // end of function DisplayMp
+
+
+    function getX(obj){
+        var ParentObj=obj;
+        var left=obj.offsetLeft;
+        while(ParentObj=ParentObj.offsetParent){
+            console.log(ParentObj);
+            left+=ParentObj.offsetLeft;
+        }
+        return left;
+    }
+    function getY(obj){
+        var ParentObj=obj;
+        var top=obj.offsetTop;
+        while(ParentObj=ParentObj.offsetParent){
+            top+=ParentObj.offsetTop;
+        }
+        return top;
+    }
+    $(".captcha-w").click(function(e){
+        var cw = document.getElementsByClassName("captcha-w")[0];
+        var left = getX(cw);
+        var top = getY(cw);
+
+        var rx = e.clientX - left + document.body.scrollLeft;
+        var ry = e.clientY - top + document.body.scrollTop;
+    });
+</script>
+</body>
+</html>

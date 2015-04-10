@@ -1,0 +1,89 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Arrowhead-Down {
+    width: 5px;
+    height: 5px;
+    background-position: -5px -5px;
+}
+
+.sprite-Arrowhead-up {
+    width: 5px;
+    height: 5px;
+    background-position: -20px -5px;
+}
+
+.sprite-Contact {
+    width: 11px;
+    height: 13px;
+    background-position: -35px -5px;
+}
+
+.sprite-Shape-Star2 {
+    width: 12px;
+    height: 12px;
+    background-position: -56px -5px;
+}
+
+.sprite-____03 {
+    width: 22px;
+    height: 22px;
+    background-position: -78px -5px;
+}
+
+.sprite-____08_07 {
+    width: 12px;
+    height: 14px;
+    background-position: -110px -5px;
+}
+
+.sprite-____10 {
+    width: 12px;
+    height: 17px;
+    background-position: -132px -5px;
+}
+
+.sprite-________________03 {
+    width: 22px;
+    height: 22px;
+    background-position: -154px -5px;
+}
+
+.sprite-________________03-_2_ {
+    width: 20px;
+    height: 18px;
+    background-position: -186px -5px;
+}
+
+.sprite-________________05 {
+    width: 18px;
+    height: 18px;
+    background-position: -216px -5px;
+}
+
+.sprite-customer-service_11 {
+    width: 24px;
+    height: 24px;
+    background-position: -244px -5px;
+}
+
+.sprite-phones_07 {
+    width: 31px;
+    height: 31px;
+    background-position: -278px -5px;
+}
+
+.sprite-zhekou_03 {
+    width: 72px;
+    height: 54px;
+    background-position: -319px -5px;
+}
+
+.sprite-zuire_03 {
+    width: 72px;
+    height: 47px;
+    background-position: -401px -5px;
+}

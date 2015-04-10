@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>我的艺培团（个人信息管理界面）</title>
+    <link rel="stylesheet" href="../bower_components/cssnormalize-min/index.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/myYpt.css"/>
+    <!--[if IE]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <!--顶部菜单栏-->
+    <div class="section-header-topmenu-w">
+        <div class="section-header-topmenu mc cf">
+            <ul class="topmenu-basic-info">
+                <li>
+                    <a href="#">请登录</a>
+                </li>
+                <li>
+                    <a href="#">免费注册</a>
+                </li>
+                <!--消息菜单，用户登录后才会出现-->
+                <li class="hide">
+                    <a href="#">
+                        <i></i>
+                        消息
+                        <i></i>
+                    </a>
+                </li>
+                <!---->
+                <li>
+                    <a href="#">手机版</a>
+                </li>
+                <li>
+                    <a href="#" class="topmenu-basic-info__phone-contact">
+                        <i class="site-sprite1"></i>
+                        400-0808-888
+                    </a>
+                </li>
+            </ul>
+            <ul class="topmenu-user-w">
+                <!--<li><a href="#">我的订单</a></li>-->
+                <li><a href="#">网站导航</a></li>
+                <li>
+                    <a href="#">
+                        <span>联系客服</span>
+                        <!--<i></i>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="topmenu-user-w__collect">
+                        <!--收藏夹图标-->
+                        <i class="site-sprite1"></i>
+                        <span>收藏夹</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown__toggle">
+                        <span>我的艺培团</span>
+                        <!--array-->
+                        <i class="site-sprite1"></i>
+                        <!--分割线-->
+                        <!--<i></i>-->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../ypt-myYpt.html">我的信息</a></li>
+                        <li><a href="../ypt-myYpt.html">我的订单</a></li>
+                        <li><a href="../ypt-myYpt.html">修改密码</a></li>
+                        <li><a href="../ypt-myYpt.html">找回密码</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--搜索框部分-->
+    <div class="section-header-body-w">
+        <div class="section-header-body mc cf">
+            <!--logo-->
+            <a class="header-site-logo" href="#">
+                <!--<span>成就艺术梦想</span>-->
+                <!--<span>yipeituan.com</span>-->
+            </a>
+            <div class="city-info">
+                <a href="#">
+                    <span>成都</span>
+                    <i class="tri"></i>
+                </a>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <form action="" class="cf" name="searchForm">
+                    <div class="search-box__tabs-container hide">
+                        <span class="tri"></span>
+                        <ul class="search-box__tabs">
+                            <li class="search-box__tab search-box__tab--deal search-box__tab--current">团购</li>
+                            <li class="search-box__tab search-box__tab--shops">商家</li>
+                        </ul>
+                    </div>
+                    <input type="text" class="search-box__input"/>
+                    <input type="submit" class="search-box__submit" value="搜&nbsp;索"/>
+                </form>
+                <div class="search-box__hot">
+                    <div class="s-hot">
+                        <a class="hot-link" href="#">设计培训</a>
+                        <a class="hot-link" href="#">音乐</a>
+                        <a class="hot-link" href="#">天空艺术</a>
+                        <a class="hot-link" href="#">四海音乐</a>
+                        <a class="hot-link" href="#">九方绘画</a>
+                        <a class="hot-link" href="#">环球艺术高考</a>
+                    </div>
+                </div>
+            </div>
+            <a class="header-site-ad" href="#"><img src="../img/header-ad.png" alt="广告"/></a>
+        </div>
+    </div>
+
+    <!--导航条-->
+    <div class="section-header-nav-w site-head_site-nav">
+        <div class="site-nav-inner mc">
+            <!--分类导航-->
+            <div class="site-head__cate-nav">
+                <span class="site-head__cate-nav-t">按价格分类<i class="tri"></i></span>
+                <div class="site-head__cate-nav-c-w">
+                    <div class="cate-nav-item">
+                        <a href="#">
+                                <span class="item-new-price">
+                                    <i></i>
+                                    8000
+                                </span>
+                            <span class="item-old-price">原价：16800</span>
+                        </a>
+                    </div>
+                    <div class="cate-nav-item">
+                        <a class="f8" href="#">
+                                <span class="item-new-price">
+                                    <i></i>
+                                    8000
+                                </span>
+                            <span class="item-old-price">原价：16800</span>
+                        </a>
+                    </div>
+                    <div class="cate-nav-item">
+                        <a href="#">
+                                <span class="item-new-price">
+                                    <i></i>
+                                    8000
+                                </span>
+                            <span class="item-old-price">原价：16800</span>
+                        </a>
+                    </div>
+                    <div class="cate-nav-item">
+                        <a class="f8" href="#">
+                                <span class="item-new-price">
+                                    <i></i>
+                                    8000
+                                </span>
+                            <span class="item-old-price">原价：16800</span>
+                        </a>
+                    </div>
+                    <div class="cate-nav-item">
+                        <a class="site-head__all-cate" href="#">全部价格</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">美术</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">舞蹈</a></li>
+                    <li><a href="#">播音主持</a></li>
+                    <li><a href="#">表演</a></li>
+                    <li><a href="#">编导</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="section-bdw mc cf mt10">
+    <div class="section-info-item__w">
+        <h3>我的艺培团</h3>
+        <ul>
+            <li><a href="#" data-content="my-info">我的信息</a></li>
+            <li class="on"><a href="#" data-content="my-deal">我的订单</a></li>
+            <li><a href="#" data-content="modify-pass">修改密码</a></li>
+            <li><a href="#" data-content="forgot-pass">找回密码</a></li>
+            <li><a href="#" data-content="my-favorite">我的收藏</a></li>
+        </ul>
+    </div>
+    <div class="section-info-content__w ml22">
+        <div class="section-u-c my-deal">
+            <h3><span>我的订单</span></h3>
+            <div class="my-deal-w">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>订单编号</th>
+                            <th>宝贝名称</th>
+                            <th>总价</th>
+                            <th>购买数量</th>
+                            <th>订单状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>295602597</td>
+                            <td>普通高考协议班、签订本科上线包过协议</td>
+                            <td>￥12000.00</td>
+                            <td>1</td>
+                            <td>交易成功</td>
+                        </tr>
+                        <tr>
+                            <td>295602597</td>
+                            <td>普通高考协议班、签订本科上线包过协议</td>
+                            <td>￥12000.00</td>
+                            <td>100</td>
+                            <td>交易成功</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="section-site-footer">
+    <div class="section-site-info-c">
+        <div class="section-site-info-w mc">
+            <div class="section-site-info-item">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="#">关于艺培团</a></li>
+                    <li><a href="#">我们的团体</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <h4>商务合作</h4>
+                <ul>
+                    <li><a href="#">关于艺培团</a></li>
+                    <li><a href="#">我们的团体</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item">
+                <h4>帮助信息</h4>
+                <ul>
+                    <li><a href="#">关于艺培团</a></li>
+                    <li><a href="#">我们的团体</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item site-info-item__site--code">
+                <h4>欢迎加入艺培团微信群和qq群</h4>
+                <ul>
+                    <li><img src="../img/the-code.png" alt="微信"/><span>微信</span></li>
+                    <li><img src="../img/the-code.png" alt="qq"/><span>QQ</span></li>
+                </ul>
+            </div>
+            <div class="section-site-info-item site-info-item__customer--service">
+                <h4>服务热线</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            400-800-8888
+                        </a>
+                        <a href="#">
+                            <i></i>
+                            在线客服
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-site-flink-w mc">
+        <div class="site-flink1">
+            <ul>
+                <li><a class="site-sprite2-1" href="javascript:;">网络社会征信网</a></li>
+                <li><a class="site-sprite2-2" href="javascript:;">可信网站身份证验证</a></li>
+                <li><a class="site-sprite2-3" href="javascript:;">itrust.org.cn</a></li>
+                <li><a class="site-sprite2-4" href="javascript:;">诚信网站</a></li>
+            </ul>
+        </div>
+        <div class="site-flink2">
+            <span>友情链接:</span>
+            <a href="#">金属价格网</a>
+            <a href="#">中国客运站</a>
+            <a href="#">绿野户外网</a>
+            <a href="#">驴妈妈旅游网</a>
+            <a href="#">春运网</a>
+            <a href="#">高铁网</a>
+            <a href="#">天气网</a>
+            <a href="#">卡宝宝网</a>
+            <a href="#">历趣网</a>
+            <a href="#">展会网</a>
+            <a href="#">母婴网</a>
+            <a href="#">聪慧网</a>
+            <a href="#">0460网站之家</a>
+            <a href="#">中国建材网</a>
+            <a href="#">深圳视窗</a>
+        </div>
+        <div class="site-copyright">
+            &copy;2015&nbsp;yipeituan.com 蜀ICP证872921号&nbsp;川公安网安备210640201455号&nbsp;互联网信息服务资格证编号（川-经营性-2015-0001）
+        </div>
+    </div>
+</footer>
+<!--安装jquery-->
+<script src="../bower_components/jquery/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/ypt-myYpt.js"></script>
+</body>
+</html>

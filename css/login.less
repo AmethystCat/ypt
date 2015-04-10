@@ -1,0 +1,70 @@
+@import "public.less";
+
+.l-hd {
+  margin: 30px auto;
+  &>a {
+    float: left;
+    display: block;
+    width: 130px;
+    height: 42px;
+    margin-left: 130px;
+    padding-right: 10px;
+    text-indent: -9999px;
+    background: url("../img/site-logo.png") no-repeat 0 center;
+  }
+  span {
+    line-height: 42px;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+.r-login {
+  float: right;
+  margin-right: 160px;
+  a {
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    background: @site-mast-c;
+    color: #fff;
+  }
+}
+
+.l-bd {
+  margin: 50px auto 90px;
+}
+.l-banner {
+  float: left;
+  margin-left: 100px;
+}
+
+/*注册样式*/
+.regist-form {
+  .form-field {
+    input {
+      width: 260px;
+      padding-left: 10px;
+      &.l-captcha {
+        width: 145px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.get-captcha {
+  width: 105px;
+  height: 42px;
+  font-weight: bold;
+  color: @button--get-captcha__c;
+}
+
+.section-site-info-w {
+  padding-left: 100px;
+}
